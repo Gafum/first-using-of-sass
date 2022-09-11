@@ -20,6 +20,10 @@
   }
 }
 
+body, html{
+	scroll-behavior: smooth;
+}
+
 button {
   background-color: $color_white;
   border-radius: 10px;
@@ -709,4 +713,10 @@ footer {
     visibility: hidden;
     opacity: 0;
   }
+}
+
+.goto{
+	position: absolute;
+	top: -70px;
+	left: 0%;
 }

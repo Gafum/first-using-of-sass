@@ -97,6 +97,10 @@ h6 {
   font-size: inherit;
 }
 
+body, html {
+  scroll-behavior: smooth;
+}
+
 button {
   background-color: #fff;
   border-radius: 10px;
@@ -1038,4 +1042,9 @@ footer > p a:hover {
     visibility: hidden;
     opacity: 0;
   }
+}
+.goto {
+  position: absolute;
+  top: -70px;
+  left: 0%;
 }

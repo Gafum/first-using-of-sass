@@ -21,14 +21,18 @@ const ImgCart = document.querySelectorAll(".cart")
 let heightOfS1 = 0 //height of first section
 let numberOfSlide = 1 //SET slide
 
+
+//on start
 chechedInput() //change slide
 showbck() //show contacts
+navShow() //show nav
 
 window.onresize = navShow
 window.onresize = showbck
 window.onscroll = navShow
 
 showNav.onclick = () => {
+	//show nav and chanche icon
   nav.classList.toggle("show")
   showNav.classList.toggle("closeNav")
 }
@@ -59,6 +63,7 @@ function chechedInput() {
 }
 
 function navShow() {
+	//show nav when we are not in the top
   heightOfS1 = document.querySelector("#s1").clientHeight + 60
   if (window.pageYOffset > heightOfS1) {
     header.classList.add("headerFix")
@@ -70,6 +75,7 @@ function navShow() {
 }
 
 function showbck() {
+	//show photos of team in the backround
   if (window.innerWidth <= 550) {
     ImgCart.forEach((x) => {
       x.style.backgroundImage = `url('..${x.dataset.img}')`
