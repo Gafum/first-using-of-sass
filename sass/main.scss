@@ -206,6 +206,10 @@ nav {
     width: 200px;
     flex-direction: column;
   }
+
+	@include breakpoint("small"){
+		width: 100%;
+	}
 }
 
 section {
